@@ -6,6 +6,8 @@ const clientID =
 
 function Logout() {
   const onLogoutSuccess = () => {
+    window.localStorage.setItem("name", "");
+    window.location.reload();
     alert("Logout made successfully");
   };
 
